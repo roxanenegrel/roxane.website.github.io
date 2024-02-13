@@ -1,0 +1,170 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/fr/thumb/6/68/Logo_JO_d%27%C3%A9t%C3%A9_-_Paris_2024.svg/1200px-Logo_JO_d%27%C3%A9t%C3%A9_-_Paris_2024.svg.png);
+    background-size: cover;
+    margin: auto;
+    font-family: Source Sans Pro,sans-serif;
+}
+
+div {
+    margin: 10;
+    display: block;
+}
+
+footer {
+    background-color: #d7c479;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color:black;
+    text-shadow: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 42px;
+    font-family: Paris2024 Semibold;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: Paris2024 Semibold;
+    text-decoration: underline;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: Paris2024 Semibold;
+    font-size: 21px;
+}
+
+p {
+    text-align: center;
+}
+
+.banner {
+    background-image: url(https://medias.paris2024.org/uploads/2021/12/Olympic-seine.jpg?x-oss-process=image/resize,w_1400,h_840,m_lfit/format,jpeg);
+    background-size: cover;
+    padding: 100px;
+}
+
+.button {
+    display: inline-block;
+    background-color:peru;
+    padding: 16px 36px;
+    border-radius: 50px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-family: Paris2024 Semibold;
+}
+
+.button:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px grey;
+    text-align: center;
+    padding: 20px;
+    border: 3px grey;
+    margin-bottom: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.card img {
+    width: 150px;
+}
+
+.item {
+    flex-basis: 400px;
+}
+
+.logo {
+    width: 50px;
+    height: 150px;
+    object-fit:contain;
+    margin: 10px;
+    margin-top: -3%;
+}
+
+/* Styles for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .banner {
+        padding: 75px;
+    }
+}
+
+/* Styles for screens between 601px and 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+
+    .card {
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .banner {
+        padding: 90px;
+    }
+}
+
+/* Styles for screens larger than 900px */
+@media screen and (min-width: 901px) {
+    .container {
+        width: 900px;
+    }
+
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 200px;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .banner {
+        padding: 100px;
+    }
+}

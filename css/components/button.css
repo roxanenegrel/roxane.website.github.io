@@ -1,0 +1,15 @@
+.button {
+    display: inline-block;
+    background-color:peru;
+    padding: 16px 36px;
+    border-radius: 50px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-family: Paris2024 Semibold;
+}
+
+.button:hover {
+    background-color: black;
+    transition: 0.5s;
+}
